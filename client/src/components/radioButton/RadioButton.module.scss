@@ -1,0 +1,33 @@
+.radio_button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  .check {
+    width: 18px;
+    height: 18px;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+    border: 1px var(--primary-color) solid;
+
+    .thumb {
+      width: 12px;
+      height: 12px;
+      display: none;
+      border-radius: 50%;
+      background-color: var(--primary-color);
+    }
+  }
+}
+
+.radio_button_checked {
+  .check {
+    .thumb {
+      display: flex;
+    }
+  }
+}

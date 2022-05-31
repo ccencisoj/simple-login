@@ -1,0 +1,27 @@
+.dev_navigation1 {
+  width: 100%;
+  display: flex;
+  padding: 0px 2vw;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #fff;
+  height: var(--navigation-height);
+  border-bottom: 1px #e5e5ee solid;
+
+  .left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+    .title {
+      font-size: 24px;
+      font-weight: 800;
+    }
+  }
+
+  .right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+}

@@ -1,0 +1,35 @@
+@baseURL=http://192.168.100.6:4000/api/avatar
+@cookie=
+
+### upload avatar
+POST {{baseURL}}/upload
+Content-Type: multipart/form-data; boundary="boundary123"
+Cookie: {{cookie}}
+
+--boundary123
+Content-Disposition: form-data; name="avatar"; filename="avatar.jpg"
+Content-Type: image/jpeg
+
+< ../public/avatar1.jpg
+--boundary123--
+
+### update avatar
+POST {{baseURL}}/update
+Content-Type: multipart/form-data; boundary="boundary123"
+
+--boundary123
+Content-Disposition: form-data; name="image"; filename="avatar.jpg"
+Content-Type: image/jpeg
+
+< ../public/avatar1.jpg
+--boundary123
+Content-Disposition: form-data; name="avatarId"
+
+620eca115a2f0d0af9b26926
+--boundary123--
+
+### selectables
+GET {{baseURL}}/selectables
+
+### delete avatar
+DELETE {{baseURL}}/asa

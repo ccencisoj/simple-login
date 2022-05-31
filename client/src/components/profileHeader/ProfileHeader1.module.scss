@@ -1,0 +1,57 @@
+.profile_header1 {
+  width: 100%;
+  display: flex;
+  margin-bottom: 48px;
+  flex-direction: column;
+
+  .column {
+    display: flex;
+    flex-direction: column;
+
+    .title {
+      font-size: 4.5em;
+      font-weight: 700;
+    }
+
+    .user {
+      gap: 16px;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+
+      .name {
+        font-size: 2em;
+      }
+    }
+  }
+}
+
+@media Only screen and (max-width: 640px) {
+  .profile_header1 {
+    font-size: 80%;
+
+    .column {
+      .user {
+        .avatar {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media Only screen and (max-width: 480px) {
+  .profile_header1 {
+    font-size: 60%;
+
+    .column {
+      .user {
+        .avatar {
+          width: 32px;
+          height: 32px;
+        }
+      }
+    }
+  }
+}

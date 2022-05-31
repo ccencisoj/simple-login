@@ -1,0 +1,23 @@
+.loading_circle1 {
+  gap: 12px;
+  --border-width: 3px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  transform: rotateZ(0deg);
+  border: var(--border-width) var(--primary-color) solid;
+  border-top: 4px transparent solid;
+  animation: loading 800ms linear 0s infinite forwards;
+}
+
+.loading_circle1_light {
+  border: var(--border-width) #fff solid;
+  border-top: 4px transparent solid;
+}
+
+@keyframes loading {
+  to {
+    transform: rotateZ(360deg);
+  }
+}

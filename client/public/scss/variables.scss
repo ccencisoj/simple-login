@@ -1,0 +1,13 @@
+:root {
+  --primary-color: #125;
+  --primary-color-hover: #125;
+  --primary-color-active: #125c;
+  --navigation-height: 72px;
+  --barside-width: 350px;
+}
+
+@media Only screen and (max-width: 400px) {
+  :root {
+    --barside-width: 100vw;
+  }
+}

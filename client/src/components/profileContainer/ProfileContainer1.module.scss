@@ -1,0 +1,17 @@
+.profile_container1 {
+  width: 940px;
+  height: 200px;
+  margin-top: 20vh;
+}
+
+@media Only screen and (max-width: 1040px) {
+  .profile_container1 {
+    width: 90%;
+  }
+}
+
+@media Only screen and (max-width: 640px) {
+  .profile_container1 {
+    width: 95%;
+  }
+}

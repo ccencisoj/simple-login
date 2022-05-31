@@ -1,0 +1,16 @@
+@baseURL=http://192.168.100.6:4000/api/profile
+@cookie=connect.sid=s%3A3e4HlQoGk4dbx08WM6jS3SDSH26zO_dc.ZAmI%2Fz9HEJNJxb2zLsWxp9NeuxIYcMZr416Xl4WT5hE; Path=/; HttpOnly
+
+### current profile
+GET {{baseURL}}/current
+Cookie: {{cookie}}
+
+### update profile
+POST {{baseURL}}/update
+Content-Type: application/json
+Cookie: {{cookie}}
+
+{
+  "username": "andres",
+  "email": "a1@gmail.com"
+}

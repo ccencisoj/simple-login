@@ -1,0 +1,40 @@
+.cutting_viewer {
+  width: 100%;
+  display: flex;
+  padding: 12px 0px;
+  box-sizing: border-box;
+  flex-direction: column;
+
+  .main {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+
+    .image {
+      width: 100%;
+      height: 50vh;
+      object-fit: cover;
+    }
+
+    .preview {
+      width: 100%;
+      height: 100%;
+    }
+    
+    .mask {
+      width: 50%;
+      cursor: move;
+      aspect-ratio: 1/1;
+      border-radius: 50%;
+      position: absolute;
+      border: 1000px #fff9 solid;
+      background-color: transparent;
+    }
+  }
+
+  .footer {
+    width: 100%;
+  }
+}

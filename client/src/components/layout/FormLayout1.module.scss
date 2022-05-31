@@ -1,0 +1,62 @@
+.form_layout1 {
+  width: 100vw;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+
+  .navigation {
+    width: 100%;
+  }
+
+  .figure1 {
+    left: 100px;
+    width: 350px;
+    bottom: -100px;
+    position: fixed;
+  }
+
+  .figure2 {
+    right: 0px;
+    bottom: 0px;
+    width: 300px;
+    position: fixed;
+  }
+
+  .main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 10vh;
+    flex-direction: column;
+  }
+}
+
+@media Only screen and (max-width: 1040px) {
+  .form_layout1 {
+    .figure1 {
+      left: 0px;
+    }
+  }  
+}
+
+@media Only screen and (max-width: 840px) {
+  .form_layout1 {
+    .figure1 {
+      left: -100px;
+    }
+    .figure2 {
+      right: -100px;
+    }
+  }  
+}
+
+@media Only screen and (max-width: 640px) {
+  .form_layout1 {
+    .figure1 {
+      display: none;
+    }
+    .figure2 {
+      display: none;
+    }
+  }  
+}

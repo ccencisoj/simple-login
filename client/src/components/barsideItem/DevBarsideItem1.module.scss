@@ -1,0 +1,62 @@
+.dev_barside_item1 {
+  --color: #999;
+  gap: 12px;
+  width: 100%;
+  display: flex;
+  padding: 20px 24px;
+  box-sizing: border-box;
+
+  .figure1 {
+    top: 0px;
+    left: 0px;
+    width: 4px;
+    height: 100%;
+    display: none;
+    position: absolute;
+    background-color: #125;
+  }
+
+  .icon {
+    width: 24px;
+    height: 24px;
+    color: var(--color);
+  }
+
+  .label {
+    font-weight: 500;
+    color: var(--color);
+  }
+}
+
+.dev_barside_item1:hover {
+  background-color: #fafaff;
+}
+
+
+.dev_barside_item1:active {
+  background-color: #f1f1ff;
+}
+
+.selected {
+  --color: #125;
+  background-color: #f5f5ff;
+
+  .figure1 {
+    display: flex;
+  }
+}
+
+@media Only screen and (max-width: 1040px) {
+  .dev_barside_item1 {
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: animation1 calc(300ms * (var(--index) + 1)) ease 500ms 1 forwards;
+  }
+}
+
+@keyframes animation1 {
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}

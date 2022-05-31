@@ -1,0 +1,26 @@
+.navigation1 {
+  width: 100%;
+  display: flex;
+  padding: 0px 5vw;
+  box-sizing: border-box;
+  background-color: #fff;
+  height: var(--navigation-height);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.02);
+
+  .left {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .right {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}

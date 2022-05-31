@@ -1,0 +1,43 @@
+.form_header1 {
+  width: 100%;
+  display: flex;
+  margin-bottom: 24px;
+  flex-direction: column;
+  
+  .title {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--primary-color);
+  }
+
+  .sentence {
+    width: 100%;
+    color: #000;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .error {
+    width: 100%;
+    --color: #f00;
+    display: flex;
+    margin-top: 4px;
+    align-items: center;
+    flex-direction: row;
+
+    .icon {
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+      color: var(--color);
+    }
+
+    .value {
+      width: 100%;
+      color: var(--color);
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,95 @@
+.notification_card1 {
+  --color: #f00;
+  width: 100%;
+  opacity: 0;
+  overflow: hidden;
+  border-radius: 5px;
+  padding: 24px 32px;
+  box-sizing: border-box;
+  background-color: #fff;
+  transform: translateX(100px);
+  box-shadow: 0px 30px 60px rgba(0, 0, 0, 0.08);
+  animation: animation1 300ms ease 0s 1 forwards;
+
+  .figure1 {
+    top: 0px;
+    left: 0px;
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    background-color: var(--color);
+  }
+
+  .column {
+    gap: 4px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .type {
+      width: 100%;
+      color: var(--color);
+      font-size: 1.1em;
+      font-weight: 600;
+    }
+
+    .type::first-letter {
+      text-transform: uppercase;
+    }
+
+    .message {
+      width: 100%;
+      font-size: 1em;
+      font-weight: 500;
+    }
+  }
+
+  .close {
+    top: 12px;
+    right: 12px;
+    position: absolute;
+  }
+}
+
+.notification_card1_error {
+  --color: #f00;
+}
+
+.notification_card1_warning {
+  --color: #F39C12;
+}
+
+.notification_card1_success {
+  --color: #0f0;
+}
+
+@keyframes animation1 {
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.notification_card1_hidden {
+  opacity: 1;
+  transform: translateX(0px);
+  animation: animation2 500ms ease 100ms 1 forwards;
+}
+
+@keyframes animation2 {
+  to {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+}
+
+@media Only screen and (max-width: 640px) {
+  .notification_card1 {
+    font-size: 90%;
+
+    .column {
+      width: 88%;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.dev_layout1 {
+  --barside-width: 300px;
+  width: 100vw;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+
+  .navigation {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 100;
+    position: sticky;
+  }
+
+  .row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: calc(100% - var(--navigation-height));
+
+    .barside {
+      width: var(--barside-width);
+      height: 100vh;
+      overflow-y: scroll;
+    }
+  
+    .barside::-webkit-scrollbar {
+      width: 0px;
+    }
+    
+    .main {
+      width: calc(100% - var(--barside-width));
+      height: 100vh;
+      display: flex;
+      overflow-y: scroll;
+      justify-content: center;
+    }
+  }
+}
+
+@media Only screen and (max-width: 1040px) {
+  .dev_layout1 {
+    .row {
+      .main {
+        width: 100%;
+      }
+    }
+  }
+}

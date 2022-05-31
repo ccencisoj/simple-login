@@ -1,0 +1,51 @@
+.dev_barside_modal1 {
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  position: absolute;
+  transition: all 300ms;
+  background-color: rgba(0, 0, 0, 0.6);
+  animation: animation3 300ms ease 0s 1 forwards;
+
+  .barside {
+    animation: animation1 300ms ease 0s 1 forwards;
+    transform: translateX(calc(-1 * var(--barside-width)));
+  }
+}
+
+.will_hidden_modal {
+  opacity: 1;
+  animation: animation4 300ms ease 0s 1 forwards;
+
+  .barside {
+    transform: translateX(0px);
+    animation: animation2 300ms ease 0s 1 forwards;
+  }
+}
+
+@keyframes animation1 {
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes animation2 {
+  to {
+    transform: translateX(calc(-1 * var(--barside-width)));
+  }
+}
+
+@keyframes animation3 {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes animation4 {
+  to {
+    opacity: 0;
+  }
+}

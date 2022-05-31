@@ -1,0 +1,11 @@
+@baseURL=http://192.168.100.6:4000/api/test
+
+### upload 
+POST {{baseURL}}/upload
+Content-Type: multipart/form-data; boundary="boundary123"
+
+--boundary123
+Content-Disposition: form-data; name="image"; filename="image.jpg"
+
+< ../public/avatar1.jpg
+--boundary123--

@@ -1,0 +1,118 @@
+.button {
+  gap: 8px;
+  --color: #999;
+  height: 56px;
+  display: flex;
+  font-size: 14px;
+  padding: 0px 32px;
+  border-radius: 5px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+
+  .label {
+    font-weight: 500;
+    color: var(--color);
+  }
+
+  .icon {
+    width: 24px;
+    height: 24px;
+    color: var(--color);
+  }
+}
+
+.button_icon {
+  padding: 0px 16px;
+}
+
+.button_round {
+  border-radius: 50%;
+}
+
+.button_expand {
+  width: 100%;
+}
+
+.button_black_color {
+  --color: #000;
+}
+
+.button_outline {
+  border: 2px var(--primary-color) solid;
+}
+
+.button:hover {
+  background-color: #f1f1ff;
+}
+
+.button:active {
+  background-color: #e5e5ee;
+}
+
+.button_primary {
+  --color: #fff;
+  background-color: var(--primary-color);
+}
+
+.button_primary:hover {
+  background-color: var(--primary-color-hover);
+}
+
+.button_primary:active {
+  background-color: var(--primary-color-active);
+}
+
+.button_secundary {
+  --color: var(--primary-color);
+  background-color: #f5f5ff;
+}
+
+.button_secundary:hover {
+  background-color: #f1f1ff;
+}
+
+.button_secundary:active {
+  background-color: #e1e1ee;
+}
+
+.button_small {
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.button_only_icon:hover {
+  --color: #000;
+}
+
+.button_disabled {
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.light_background {
+  background-color: #f5f5ff;
+}
+
+@media Only screen and (max-width: 640px) {
+  .button {
+    height: 48px;
+    padding: 0px 32px;
+  }
+
+  .button_icon {
+    padding: 0px 16px;
+  }
+
+  .button_only_icon {
+    width: 48px;
+    height: 48px;
+    padding: 0px 0px;
+  }
+
+  .button_expand {
+    height: 56px;
+  }
+}

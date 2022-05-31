@@ -1,0 +1,21 @@
+.notifications_container1 {
+  gap: 12px;
+  bottom: 32px;
+  right: 32px;
+  width: 600px;
+  display: flex;
+  z-index: 1000;
+  position: fixed;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+@media Only screen and (max-width: 640px) {
+  .notifications_container1 {
+    top: 32px;
+    left: 0px;
+    right: 0px;
+    width: 95%;
+    margin: 0px auto;
+  }
+}

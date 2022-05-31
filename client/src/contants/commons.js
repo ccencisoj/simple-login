@@ -1,0 +1,6 @@
+export const SING_UP_STEP1 = "SIGN_UP_STEP1";
+export const SIGN_UP_STEP2 = "SIGN_UP_STEP2";
+export const SIGN_UP_STEP3 = "SIGN_UP_STEP3";
+
+export const DEV_SECTION_AVATARS = "DEV_SECTION_AVATARS";
+export const DEV_SECTION_USERS = "DEV_SECTION_USERS";

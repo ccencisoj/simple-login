@@ -1,0 +1,30 @@
+@baseURL=http://192.168.100.6:4000/api/user
+@cookie=connect.sid=s%3Am0d_0mCGdCJIQzQRDT6bv8uOHD3ox39n.VGnJ%2Bo40cor5dOshUIOtJXU44zSDM6pDFpu2l22Fdtc; Path=/; HttpOnly
+
+### create user
+POST {{baseURL}}/create
+Content-Type: application/json
+
+{
+  "username": "cristian",
+  "email": "cristian@gmail.com",
+  "password": "12345678",
+  "age": 12,
+  "avatar": "62100ca030c689c85979c393"
+}
+
+### login user
+POST {{baseURL}}/login
+Content-Type: application/json
+
+{
+  "email": "bizapro123@gmail.com",
+  "password": "123Ascife0192*"
+}
+
+### get current user
+GET {{baseURL}}/current
+cookie: {{cookie}}
+
+### get profile
+GET {{baseURL}}/profile

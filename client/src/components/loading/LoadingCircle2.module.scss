@@ -1,0 +1,45 @@
+.loading_circle2 {
+  gap: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .circle {
+    --border-width: 12px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    transform: rotateZ(0deg);
+    border: var(--border-width) var(--primary-color) solid;
+    border-top: var(--border-width) transparent solid;
+    animation: animation1 800ms linear 0s infinite forwards;
+  }
+  
+  @keyframes animation1 {
+    to {
+      transform: rotateZ(360deg);
+    }
+  } 
+
+  .label {
+    width: 100%;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+  }
+}
+
+@media Only screen and (max-width: 640px) {
+  .loading_circle2 {
+    .circle {
+      width: 120px;
+      height: 120px;
+    }
+
+    .label {
+      font-size: 20px;
+    }
+  }
+}

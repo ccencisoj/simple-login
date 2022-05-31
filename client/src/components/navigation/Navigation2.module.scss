@@ -1,0 +1,30 @@
+.navigation2 {
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  padding: 0px 2vw;
+  align-items: center;
+  flex-direction: row;
+  box-sizing: border-box;
+  height: var(--navigation-height);
+  
+  .left {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .right {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media Only screen and (max-width: 540px) {
+  .navigation2 {
+    padding: 0px 12px;
+  }
+}
